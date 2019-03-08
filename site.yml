@@ -1,0 +1,11 @@
+- hosts: all
+  roles:
+  - role: common
+
+- hosts: mysql
+  roles:
+  - role: mysql
+
+- hosts: nginx
+  roles:
+  - role: nginx

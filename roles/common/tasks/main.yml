@@ -1,0 +1,10 @@
+- name: install supervisor
+  apt: pkg=supervisor
+  remote_user: vagrant
+  sudo: yes
+
+- name: group var
+  debug: msg="groupvar is {{ groupvar }}"
+
+- name: host var
+  debug: msg="hostvar is {{ hostvar }}"
