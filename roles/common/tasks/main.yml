@@ -8,3 +8,6 @@
 
 - name: host var
   debug: msg="hostvar is {{ hostvar }}"
+
+- name: test filter
+  debug: msg="{{ 'testfilter'|my_filter }}"
